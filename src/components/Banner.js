@@ -25,6 +25,7 @@ export const Banner = () => {
     let fullText = toRotate[i];
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
+    // updatea el texto lo que hace que se ejecute el useEffect
     setText(updatedText);
 
     if (isDeleting) {
